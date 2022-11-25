@@ -1,14 +1,14 @@
 {
   "name": "more-enum",
   "version": "1.0.0",
-  "description": "",
+  "description": "zero dependencies enum extension",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
     "test": "npx jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["enum"],
+  "author": "Shiyu Peng",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.20.2",

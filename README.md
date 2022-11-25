@@ -1,6 +1,13 @@
 # more-enum
 
-一个枚举增强扩展
+zero dependencies enum extension
+
+> 零依赖的枚举扩展工具
+
+文档
+
+- [https://www.npmjs.com/package/more-enum](https://www.npmjs.com/package/more-enum)
+- [https://github.com/mouday/more-enum](https://github.com/mouday/more-enum)
 
 安装
 
