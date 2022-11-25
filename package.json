@@ -1,6 +1,6 @@
 {
   "name": "more-enum",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "zero dependencies enum extension",
   "main": "src/index.js",
   "type": "module",
