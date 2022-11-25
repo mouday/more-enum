@@ -5,8 +5,8 @@
  * @returns {Object}
  */
 export function createEnumObject(enums, config = null) {
-  let valueKey = (config ? config.valueKey : null) || "value";
-  let labelKey = (config ? config.labelKey : null) || "label";
+  let valueKey = (config ? config.valueKey : null) || 'value'
+  let labelKey = (config ? config.labelKey : null) || 'label'
 
   return {
     /**
@@ -18,7 +18,7 @@ export function createEnumObject(enums, config = null) {
     getItem(value, key = null) {
       for (let item of enums) {
         if (item[key || valueKey] == value) {
-          return item;
+          return item
         }
       }
     },
@@ -29,7 +29,7 @@ export function createEnumObject(enums, config = null) {
      * @returns {Array}
      */
     getColums(key) {
-      return enums.map((item) => item[key]);
+      return enums.map((item) => item[key])
     },
 
     /**
@@ -40,9 +40,9 @@ export function createEnumObject(enums, config = null) {
      * @returns {Any}
      */
     getColum(column, key, value) {
-      let item = this.getItem(value, key);
+      let item = this.getItem(value, key)
       if (item) {
-        return item[column];
+        return item[column]
       }
     },
 
@@ -51,7 +51,7 @@ export function createEnumObject(enums, config = null) {
      * @returns {Array}
      */
     getLabels() {
-      return this.getColums(labelKey);
+      return this.getColums(labelKey)
     },
 
     /**
@@ -59,27 +59,27 @@ export function createEnumObject(enums, config = null) {
      * @returns {Array}
      */
     getValues() {
-      return this.getColums(valueKey);
+      return this.getColums(valueKey)
     },
 
     /**
      * 获取label
-     * @param {Any} value 
-     * @param {String} key 
+     * @param {Any} value
+     * @param {String} key
      * @returns {Any}
      */
     getLabel(value, key = null) {
-      return this.getColum(labelKey, key || valueKey, value);
+      return this.getColum(labelKey, key || valueKey, value)
     },
 
     /**
      * 获取value
-     * @param {Any} value 
-     * @param {String} key 
+     * @param {Any} value
+     * @param {String} key
      * @returns {Any}
      */
     getValue(value, key = null) {
-      return this.getColum(valueKey, key || labelKey, value);
+      return this.getColum(valueKey, key || labelKey, value)
     },
-  };
+  }
 }

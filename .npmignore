@@ -1,0 +1,7 @@
+tests
+node_modules
+.babelrc
+.DS_Store
+.gitignore
+pnpm-lock.yaml
+prettier.config.cjs
